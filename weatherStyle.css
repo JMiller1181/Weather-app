@@ -14,6 +14,7 @@ header {
 }
 #locationInput {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 #location {
@@ -23,15 +24,20 @@ header {
 }
 #locationData {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 80%;
 }
 #locationData p {
     margin: 1rem;
 }
+#dateBox {
+    display: flex;
+}
+#placeBox {
+    display: flex;
+}
 .infoTitle {
     display: flex;
-    flex-direction: column;
     font-weight: bold;
 }
 .infoTitle p {
@@ -49,8 +55,8 @@ header {
     padding: 1rem;
     border-radius: 2rem;
     width: 30vw;
-    height: 80vh;
-    background-color: #F4FAFF;
+    height: fit-content;
+    background-color: #4F646F;
 }
 #locality {
     text-align: center;
@@ -76,4 +82,21 @@ header {
 #weatherIcon {
     width: 30%;
     height: 30%;
+}
+#currentTemp {
+    color: #F4FAFF;
+}#currentWeather {
+    color: #F4FAFF;
+}
+#feelsLike {
+    color: #F4FAFF;
+}
+#windSpeed {
+    color: #F4FAFF;
+}
+#lo {
+    color: #F4FAFF;
+}
+#hi {
+    color: #F4FAFF;
 }

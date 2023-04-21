@@ -34,7 +34,7 @@ search.addEventListener("click", () => {
           document.querySelector(
             "#weatherIcon"
           ).src = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
-          document.querySelector("#windSpeed").innerHTML = weather.wind.speed;
+          document.querySelector("#windSpeed").innerHTML = weather.wind.speed + " MPH";
           document.querySelector("#lo").innerHTML =
             weather.main.temp_min + "°F";
           document.querySelector("#hi").innerHTML =
