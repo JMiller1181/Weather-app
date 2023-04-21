@@ -1,6 +1,8 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+    background-color: #DEE7E7;
 }
 header {
     background-color: #B7ADCF;
@@ -27,6 +29,14 @@ header {
 #locationData p {
     margin: 1rem;
 }
+.infoTitle {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.infoTitle p {
+    text-align: center;
+}
 #cardHolder {
     display: flex;
     justify-content: center;
@@ -36,11 +46,34 @@ header {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
+    padding: 1rem;
     border-radius: 2rem;
     width: 30vw;
     height: 80vh;
+    background-color: #F4FAFF;
+}
+#locality {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+.dataTitle {
+    font-weight: bold;
 }
 #currentConditions {
     display: flex;
     justify-content: space-between;
+}
+#tempDataBlock {
+    display: flex;
+    justify-content: space-evenly;
+}
+#currentWeatherBox {
+    display: flex;
+    border: none;
+    align-items: center;
+}
+#weatherIcon {
+    width: 30%;
+    height: 30%;
 }

@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Report</title>
-    <link rel="stylesheet" href="weatherStyle.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="weatherStyle.css" />
+  </head>
+  <body>
     <header>
-        <form id="locationInput">
-            <label for="location"> Search by location
-                <input type="text "id="location" name="location" placeholder="ZIP Code">
-            </label>
-            <button id="SearchButton" type="button" value="Submit"></button>
-        </form>
-        <div id="locationData">
-            <p>Date:</p>
-            <p>Time:</p>
-            <p id="place">Place:</p>
+      <form id="locationInput">
+        <label for="location">
+          Search by location
+          <input
+            type="text "
+            id="location"
+            name="location"
+            placeholder="ZIP Code"
+          />
+        </label>
+        <button id="SearchButton" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <div id="locationData">
+        <div id="dateBox">
+          <p class="infoTitle">Today's date is:</p>
+          <p id="date"></p>
         </div>
+        <div>
+          <p class="infoTitle">Displaying weather in:</p>
+          <p id="place"></p>
+        </div>
+      </div>
     </header>
     <section id="cardHolder">
-    <div id="weatherCard">
-        <p>Enter your location to learn about the weather in your area</p>
+      <div id="weatherCard">
+        <p id="locality">
+          Enter your location to learn about the weather in your area
+        </p>
         <div id="currentConditions">
-        <p>current temperature</p>
-        <p>current weather</p>
+          <div class="dataBlock">
+            <p class="dataTitle" id="temp">
+              Current temperature:<i class="bi bi-thermometer-half"></i>
+            </p>
+            <p id="currentTemp"></p>
+          </div>
+          <div class="dataBlock">
+            <p class="dataTitle" id="weatherTitle">Current weather:</p>
+            <div id="currentWeatherBox">
+              <img id="weatherIcon" />
+              <p id="currentWeather"></p>
+            </div>
+          </div>
         </div>
-        <p>Todays hi/lo</p>
-
-    </div>
+        <div class="dataBlock">
+          <p class="dataTitle" id="feels">
+            Currently Feels Like:<i class="bi bi-thermometer-half"></i>
+          </p>
+          <p id="feelsLike"></p>
+        </div>
+        <div class="dataBlock">
+          <p class="dataTitle" id="wind">
+            Wind Speed:<i class="bi bi-wind"></i>
+          </p>
+          <p id="windSpeed"></p>
+        </div>
+        <div id="tempDataBlock">
+          <p class="dataTitle" id="tempLo">
+            Today's Lo:<i class="bi bi-thermometer-low"></i>
+          </p>
+          <p id="lo"></p>
+          <p class="dataTitle" id="tempHi">
+            Today's Hi:<i class="bi bi-thermometer-high"></i>
+          </p>
+          <p id="hi"></p>
+        </div>
+      </div>
     </section>
-    <footer class="bottomBar"></footer>
+    <footer class="bottomBar">
+      <p>
+        This app was created as a project during the 2023 Career Technology
+        Apprenticeship Cohort using the OpenWeatherMap API
+      </p>
+    </footer>
     <script src="weatherScript.js"></script>
-</body>
+  </body>
 </html>
