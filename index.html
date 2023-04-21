@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="weatherStyle.css">
+</head>
+<body>
+    <header>
+        <form id="locationInput">
+            <label for="location"> Search by location
+                <input type="text "id="location" name="location" placeholder="ZIP Code">
+            </label>
+            <button id="SearchButton" type="button" value="Submit"></button>
+        </form>
+        <div id="locationData">
+            <p>Date:</p>
+            <p>Time:</p>
+            <p id="place">Place:</p>
+        </div>
+    </header>
+    <section id="cardHolder">
+    <div id="weatherCard">
+        <p>Enter your location to learn about the weather in your area</p>
+        <div id="currentConditions">
+        <p>current temperature</p>
+        <p>current weather</p>
+        </div>
+        <p>Todays hi/lo</p>
+
+    </div>
+    </section>
+    <footer class="bottomBar"></footer>
+    <script src="weatherScript.js"></script>
+</body>
+</html>
