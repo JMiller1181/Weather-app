@@ -57,14 +57,17 @@ header {
     width: 30vw;
     height: fit-content;
     background-color: #4F646F;
+    box-shadow: 10px 10px 7px #171c1e;
 }
 #locality {
+    color: #a0c9df;
     text-align: center;
     font-size: 1em;
     font-weight: bold;
 }
 .dataTitle {
     font-weight: bold;
+    color: #a0c9df;
 }
 #currentConditions {
     display: flex;
@@ -99,4 +102,14 @@ header {
 }
 #hi {
     color: #F4FAFF;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #B7ADCF;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    margin: 0;
 }
