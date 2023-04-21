@@ -3,7 +3,7 @@ search.addEventListener("click", () => {
   let location = document.querySelector("#location").value;
   document.querySelector("#location").value = "";
   fetch(
-    `http://api.openweathermap.org/geo/1.0/zip?zip=${location},us&appid=955f10e58acb14070de949096114de11`
+    `https://api.openweathermap.org/geo/1.0/zip?zip=${location},us&appid=955f10e58acb14070de949096114de11`
   )
     .then((response) => response.json())
     .then((place) => {
@@ -24,7 +24,7 @@ search.addEventListener("click", () => {
           console.log(weather);
           document.querySelector("#locality").innerHTML = weather.name;
           document.querySelector("#date").innerHTML =
-            date.getMonth() + 1 + " / " + date.getDate();
+            date.getMonth() + 1 + " / " + date.getDate() + " / " + date.getFullYear();
           document.querySelector("#currentTemp").innerHTML =
             weather.main.temp + "°F";
           document.querySelector("#feelsLike").innerHTML =
